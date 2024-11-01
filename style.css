@@ -1,4 +1,4 @@
-.body {
+body {
     overflow: hidden;
     height: 100vh;
     width: 100vh;
@@ -7,6 +7,7 @@
     align-items: center;
     margin: 0;
     background: #424f6f;
+    background: cover;
 }
 
 #container {
@@ -23,10 +24,11 @@
 }
 
 #spooky {
-    margin: 10% auto;
- width: 80%;
- width: 80%;
- animation: floaty 2s infinite;
+    /* margin: 10% auto; */
+    position: absolute;
+    width: 80%;
+    width: 80%;
+    animation: floaty 2s infinite;
 }
 
 #spooky #body {
@@ -69,7 +71,7 @@ width: 90px;
 height: 20px;
 }
 
-#spooky #body #eyes:before 
+#spooky #body #eyes:before, 
 #spooky #body #eyes:after {
     content: ' ';
     display: block;
